@@ -44,44 +44,8 @@ h1 + p {
 	width: 13em;
 }
 
-.events .refreshedinburgh {
-	border-color: #a2b935;
-}
-.events .techmeetup {
-	border-color: #685c4e;
-}
-.events .scotrug {
+.events .lrug {
 	border-color: #c61a1a;
-}
-.events .macmacdev {
-	border-color: #666c78;
-}
-.events .edmug {
-	border-color: #333333;
-}
-.events .edlug {
-	border-color: #0000ff;
-}
-.events .edinburghpm {
-	border-color: #336699;
-}
-.events .supa {
-	border-color: #ff9805;
-}
-.events .jugscotland {
-	border-color: #003366;
-}
-.events .edpug {
-	border-color: #e7eff7;
-}
-.events .edcm {
-	border-color: #990000;
-}
-.events .edinburghpug {
-	
-}
-.events .tba {
-	color: #ccc;
 }
 .events .add_event {
 	background: #ff9;
