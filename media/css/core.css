@@ -89,6 +89,9 @@ h1 + p {
 .events .lfdnd {
   border-color: #670014;
 }
+.events .flug {
+  border-color: #5fb0f2;
+}
 .events .add_event {
 	background: #ff9;
 	border-color: #ff9;
