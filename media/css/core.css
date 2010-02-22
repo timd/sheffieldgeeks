@@ -98,6 +98,9 @@ h1 + p {
 .events .dorkbot {
   border-color: #80b704;
 }
+.events .hackspace {
+  border-color: #3528a8;
+}
 .events .when.date {
   font-style: italic;
 }
