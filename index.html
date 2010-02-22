@@ -98,7 +98,11 @@
       if(then) {
         when.data('when:original', when.text());
         when.addClass('date');
-        when.text('Next: ' + then.toDateString())
+        if(then.toDateString() == (new Date()).toDateString()) {
+          when.text('Next: Today!');
+        } else {
+          when.text('Next: ' + then.toDateString())
+        }
       }
     }
 
