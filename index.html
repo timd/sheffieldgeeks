@@ -93,7 +93,7 @@
     }
 
     function showNextDate(event) {
-      var when = $(event.target),
+      var when = $(event.target).children('.when'),
           then = (new Date()).parseRelative(when.text());
       if(then) {
         when.data('when:original', when.text());
@@ -107,14 +107,14 @@
     }
 
     function showOriginal(event) {
-      var when = $(event.target);
+      var when = $(event.target).children('.when');
       if(when.data('when:original') != "") {
         when.removeClass('date');
         when.text(when.data('when:original'));
       }
     }
 
-    $(".events .when").each(function(index, element) {
+    $(".events li").each(function(index, element) {
       $(element).hover(showNextDate, showOriginal);
     })
   });
