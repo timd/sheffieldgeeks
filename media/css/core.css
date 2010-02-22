@@ -95,6 +95,9 @@ h1 + p {
 .events .pubstandards {
   border-color: #edebb2;
 }
+.events .dorkbot {
+  border-color: #80b704;
+}
 .events .when.date {
   font-style: italic;
 }
