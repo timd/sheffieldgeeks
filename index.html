@@ -92,15 +92,27 @@
       }
     }
 
-    $(".events .when").each(function(index, element) {
-      var when        = $(element),
-      description = when.text(),
-      then        = (new Date()).parseRelative(description);
+    function showNextDate(event) {
+      var when = $(event.target),
+          then = (new Date()).parseRelative(when.text());
       if(then) {
+        when.data('when:original', when.text());
         when.addClass('date');
         when.text('Next: ' + then.toDateString())
       }
-    });
+    }
+
+    function showOriginal(event) {
+      var when = $(event.target);
+      if(when.data('when:original') != "") {
+        when.removeClass('date');
+        when.text(when.data('when:original'));
+      }
+    }
+
+    $(".events .when").each(function(index, element) {
+      $(element).hover(showNextDate, showOriginal);
+    })
   });
   </script>
 
