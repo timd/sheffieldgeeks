@@ -6,6 +6,95 @@
   <title>london2: what’s on</title>
   <link charset="utf-8" href="media/css/reset.css" media="screen" rel="stylesheet" type="text/css" />
   <link charset="utf-8" href="media/css/core.css" media="screen" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="media/js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      Date.prototype.endOfMonth = function() {
+        var then = new Date();
+
+        // Set the time as late as possible.
+        then.setHours(23);
+        then.setMinutes(59);
+        then.setSeconds(59);
+        then.setMilliseconds(999);
+
+        // Work out the last day of the month.
+        then.setDate(29);
+        while(then.getMonth() == this.getMonth()) {
+          then.setDate(then.getDate() + 1);
+        }
+        then.setDate(then.getDate() - 1);
+
+        return then;
+      }
+
+      Date.prototype.startOfMonth = function() {
+        var then = new Date(this);
+        then.setHours(0);
+        then.setMinutes(0);
+        then.setSeconds(0);
+        then.setMilliseconds(0);
+        then.setDate(1);
+        return then;
+      }
+
+      $(".events .when").each(function(index, element) {
+        var when        = $(element),
+            description = when.text(),
+            now         = new Date(),
+            offset      = /^(First|Second|Third|Fourth) /i,
+            meetupDay   = / ((Mon|Tues|Wednes|Thurs|Fri|Sat|Sun)day)$/i,
+            dayNumber  = { 'sunday': 0, 'monday': 1, 'tuesday': 2, 'wednesday': 3, 'thursday': 4, 'friday': 5, 'saturday': 6},
+            modifierNumber = { 'first': 0, 'second': 1, 'third': 2, 'fourth': 3 };
+        if(offset.test(description)) {
+          var modifiers = offset.exec(description),
+              modifierName = modifiers[1].toLowerCase(),
+              modifier  = modifierNumber[modifierName],
+              days      = meetupDay.exec(description),
+              dayName   = days[1].toLowerCase(),
+              day       = dayNumber[dayName];
+          countBackwards = new RegExp('^' + modifierName + ' Last ' + dayName + '$', 'i');
+          if(countBackwards.test(description)) {
+            var then = now.endOfMonth();
+            while(true) {
+              while(then.getDay() != day) {
+                then.setDate(then.getDate() - 1);
+              }
+              for(var i = 0; i < modifier; i++) {
+                then.setDate(then.getDate() - 7);
+              }
+
+              if(then.getTime() > now.getTime()) {
+                break;
+              }
+              then.setMonth(then.getMonth() + 1);
+              then = then.endOfMonth();
+            }
+
+            when.text('Next: ' + then.toDateString());
+          } else {
+            var then = now.startOfMonth();
+            while(true) {
+              while(then.getDay() != day) {
+                then.setDate(then.getDate() + 1);
+              }
+              for(var i = 0; i < modifier; i++) {
+                then.setDate(then.getDate() + 7);
+              }
+
+              if(then.getTime() > now.getTime()) {
+                break;
+              }
+              then.setMonth(then.getMonth() + 1);
+              then = then.startOfMonth();
+            }
+
+            when.text('Next: ' + then.toDateString());
+          }
+        }
+      });
+    });
+  </script>
 
 </head>
 <body>
