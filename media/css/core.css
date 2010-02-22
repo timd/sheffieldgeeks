@@ -86,6 +86,9 @@ h1 + p {
 .events .lsug {
   border-color: #a20018;
 }
+.events .lfdnd {
+  border-color: #670014;
+}
 .events .add_event {
 	background: #ff9;
 	border-color: #ff9;
