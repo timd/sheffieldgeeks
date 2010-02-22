@@ -83,6 +83,9 @@ h1 + p {
 .events .erlangers {
   border-color: #6e1b29;
 }
+.events .lsug {
+  border-color: #a20018;
+}
 .events .add_event {
 	background: #ff9;
 	border-color: #ff9;
