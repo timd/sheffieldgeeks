@@ -95,6 +95,9 @@ h1 + p {
 .events .pubstandards {
   border-color: #edebb2;
 }
+.events .when.date {
+  font-style: italic;
+}
 .events .add_event {
 	background: #ff9;
 	border-color: #ff9;
