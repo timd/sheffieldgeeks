@@ -92,6 +92,9 @@ h1 + p {
 .events .flug {
   border-color: #5fb0f2;
 }
+.events .pubstandards {
+  border-color: #edebb2;
+}
 .events .add_event {
 	background: #ff9;
 	border-color: #ff9;
