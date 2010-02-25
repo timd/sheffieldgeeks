@@ -44,71 +44,71 @@ h1 + p {
 	width: 13em;
 }
 
-.events .lrug {
+.events #lrug {
 	border-color: #c61a1a;
 }
-.events .phplondon {
+.events #phplondon {
   border-color: #777bb4;
 }
-.events .djugl {
+.events #djugl {
   border-color: #487858;
 }
-.events .lpm {
+.events #lpm {
   border-color: #0087d9;
 }
-.events .dotnet {
+.events #dotnet {
   border-color: #4b5054;
 }
-.events .gllug {
+.events #gllug {
   border-color: #0c0f67;
 }
-.events .javascripters {
+.events #javascripters {
   border-color: #f7eee2;
 }
-.events .devops {
+.events #devops {
   border-color: #cee1ef;
 }
-.events .lfpug {
+.events #lfpug {
   border-color: #3e1126;
 }
-.events .lmug {
+.events #lmug {
   border-color: #2d2d2d;
 }
-.events .wlbcs {
+.events #wlbcs {
   border-color: #006633;
 }
-.events .lhug {
+.events #lhug {
   border-color: #dbe59f;
 }
-.events .erlangers {
+.events #erlangers {
   border-color: #6e1b29;
 }
-.events .lsug {
+.events #lsug {
   border-color: #a20018;
 }
-.events .lfdnd {
+.events #lfdnd {
   border-color: #670014;
 }
-.events .flug {
+.events #flug {
   border-color: #5fb0f2;
 }
-.events .pubstandards {
+.events #pubstandards {
   border-color: #edebb2;
 }
-.events .dorkbot {
+.events #dorkbot {
   border-color: #80b704;
 }
-.events .hackspace {
+.events #hackspace {
   border-color: #3528a8;
 }
-.events .when.date {
+.events #when.date {
   font-style: italic;
 }
-.events .add_event {
+.events #add_event {
 	background: #ff9;
 	border-color: #ff9;
 }
-.events .add_event h2 {
+.events #add_event h2 {
 	padding: 1.2em;
 	text-align: center;
 }
