@@ -101,6 +101,15 @@ h1 + p {
 .events #hackspace {
   border-color: #3528a8;
 }
+.events #funix {
+  border-color: #cccccc;
+}
+.events #xforms {
+  border-color: #ffccff;
+}
+.events #hackspace {
+  border-color: #3528a8;
+}
 .events #when.date {
   font-style: italic;
 }
