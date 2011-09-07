@@ -110,7 +110,7 @@ h1 + p {
 .events #hackspace {
   border-color: #3528a8;
 }
-.events .lnug {
+.events #lnug {
   border-color: #353129;
 }
 .events #when.date {
