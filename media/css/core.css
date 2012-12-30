@@ -78,9 +78,11 @@ body > footer {
 	background: #eee;
 	border-top: 1px solid #ddd;
 	clear: both;
-	color: #ccc;
+	color: #777bb4;
 	margin: 0 -17px -1px;
 	padding: 1.5em 17px 3em;
+	font-size: 1.0em;
+	line-height: 1.5em;
 }
 body > footer a {
 	color: #ccc;
