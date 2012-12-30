@@ -1,9 +1,16 @@
+@charset 'utf-8';
+
+html {
+	background: #eee;
+}
 body {
 	background: #fff;
+	border: 1px solid #ddd;
 	color: #222;
 	font: 100%/1.5em "Helvetica Neue",Arial,Helvetica,sans-serif;
 	margin: 0 auto;
-	width: 48em;
+	padding: 0 16px;
+	width: 752px;
 }
 
 a,
@@ -20,36 +27,92 @@ h1 {
 	color: #000;
 	font-size: 2em;
 	line-height: 1.5em;
-	padding: 1.5em 0;
 }
 h2 {
 	font-size: 1.25em;
+	line-height: 1em;
+}
+h3 {
+	font-size: 1.25em;
 	line-height: 1.2em;
 }
-h1 + p {
-	padding: 0 0 1.5em;
+
+article,
+footer,
+header,
+nav {
+	display: block;
+}
+
+body > header {
+	padding: 3em 0;
+}
+body > article > section {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+body > article > section > header {
+	clear: both;
+	text-align: right;
+	transform-origin: 23.5em 25em;
+	transform: rotate(-90deg);
+	-ms-transform-origin: 23.5em 25em;
+	-ms-transform: rotate(-90deg);
+	-moz-transform-origin: 23.5em 25em;
+	-moz-transform: rotate(-90deg);
+	-o-transform-origin: 23.5em 25em;
+	-o-transform: rotate(-90deg);
+	-webkit-transform-origin: 23.5em 25em;
+	-webkit-transform: rotate(-90deg);
+}
+body > article > section > header h2 {
+	background: #fff;
+	border: 0 solid #ddd;
+	border-width: 1px 1px 0;
+	float: right;
+	margin: -1.5em 0 17px;
+	padding: 0.5em 0.5em 7px;
+}
+body > footer {
+	background: #eee;
+	border-top: 1px solid #ddd;
+	clear: both;
+	color: #ccc;
+	margin: 0 -17px -1px;
+	padding: 1.5em 17px 3em;
+}
+body > footer a {
+	color: #ccc;
+}
+
+.add_event {
+	float: right;
+	margin-top: -3em;
+	font-size: 1.0em;
+	line-height: 1.2em;
+
+}
+.add_event a {
+	background: #ff9;
+	display: block;
+	padding: 0.75em;
 }
 
 .events {
 	float: left;
-	padding: 0 0 3em;
+	padding: 0;
 	width: 100%;
 }
 .events li {
 	border: 0.5em solid #eee;
 	float: left;
 	height: 4.5em;
-	margin: 0 1em 1em 0;
+	margin: 0 0 1em 16px;
 	padding: 0.5em;
-	width: 13em;
+	width: 208px;
 }
-
-.footer {
-	border-top: 1px solid #eee;
-	clear: both;
-	color: #ccc;
-	padding: 0.75em 0;
-}
-.footer a {
-	color: #ccc;
+.events li:nth-child(3n-2) {
+	clear: left;
+	margin-left: 0;
 }

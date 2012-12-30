@@ -3,26 +3,27 @@
 .events #geeksinthepub {
     border-color: #c61a1a;
 }
-
-/* END OF STYLES IN USE */
-
-/* SPARE STYLES */
-
-.events #phplondon {
+.events #shrug {
   border-color: #777bb4;
 }
-.events #djugl {
+.events #pysheff {
   border-color: #487858;
 }
-.events #lpm {
+.events #firstplay {
   border-color: #0087d9;
 }
 .events #dotnet {
   border-color: #4b5054;
 }
-.events #gllug {
+.events #wpsheffield {
   border-color: #0c0f67;
 }
+
+/* END OF STYLES IN USE */
+
+/* SPARE STYLES */
+
+
 .events #javascripters {
   border-color: #f7eee2;
 }
