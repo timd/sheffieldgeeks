@@ -3,7 +3,7 @@ sheffieldgeeks
 
 The code that "runs" sheffieldgeeks.org.uk.
 
-## Update process
+## The easy update process
 
 1. Fork this repository
 2. Update the `index.html` file with your event
@@ -12,3 +12,9 @@ The code that "runs" sheffieldgeeks.org.uk.
 5. Send a pull request.
 6. Err...
 7. That's it.
+
+## The easier update process
+
+1. Send an email to `tim@timduckett.co.uk` with the details.
+2. Err…
+3. That's it.
