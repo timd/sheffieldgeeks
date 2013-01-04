@@ -18,27 +18,34 @@
 .events #wpsheffield {
   border-color: #0c0f67;
 }
-
+.events #hardwarehackers {
+  border-color: #f7eee2;
+}
+.events #opendata {
+  border-color: #cee1ef;
+}
+.events #openrightsgroup {
+  border-color: #3e1126;
+}
+.events #php {
+  border-color: #2d2d2d;
+}
+.events #raspi {
+  border-color: #006633;
+}
+.events #startup {
+  border-color: #dbe59f;
+}
 /* END OF STYLES IN USE */
 
 /* SPARE STYLES */
 
 
-.events #javascripters {
-  border-color: #f7eee2;
-}
-.events #devops {
-  border-color: #cee1ef;
-}
-.events #lfpug {
-  border-color: #3e1126;
-}
-.events #lmug {
-  border-color: #2d2d2d;
-}
-.events #wlbcs {
-  border-color: #006633;
-}
+
+
+
+
+
 .events #lhug {
   border-color: #dbe59f;
 }
