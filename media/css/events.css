@@ -39,22 +39,14 @@
 .events #sheffieldjs {
   border-color: #4c9c76;
 }
+.events #nsmanchester {
+  border-color: #6e1b29;
+}
+
 /* END OF STYLES IN USE */
 
 /* SPARE STYLES */
 
-
-
-
-
-
-
-.events #lhug {
-  border-color: #dbe59f;
-}
-.events #erlangers {
-  border-color: #6e1b29;
-}
 .events #lsug {
   border-color: #a20018;
 }
